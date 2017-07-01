@@ -41,7 +41,7 @@ function main()
           doritosCount = doritosCount + 1
           mlgpoints = mlgpoints - doritosCost
         else 
-          print("You didn't have enough MLG Points to buy all those Doritos!")
+          print("\n\tYou didn't have enough MLG Points to buy all those Doritos!")
           break
         end --if statement  
       end --for loop
@@ -66,7 +66,7 @@ function main()
           dewCount = dewCount + 1
           mlgpoints = mlgpoints - dewCost
         else 
-          print("You didn't have enough MLG Points to buy all that Mountain Dew!")
+          print("\n\tYou didn't have enough MLG Points to buy all that Mountain Dew!")
           break
         end --if statement  
       end --for loop
