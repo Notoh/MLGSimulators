@@ -9,8 +9,6 @@ MLG Simulator was my first coding project ever. I wanted to make a math practice
 
 Ada
 
-C++ (again as I need to redo it)
-
 JavaScript
 
 Maybe python
