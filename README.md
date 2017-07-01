@@ -1,2 +1,2 @@
 # MLGSimulatorOtherLangs
-Other language version of MLG Simulator. 
+Other language versions of MLG Simulator. 
