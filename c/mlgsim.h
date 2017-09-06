@@ -1,10 +1,9 @@
-#ifndef _MAIN_H
-#define _MAIN_H
+#ifndef _MLGSIM_H
+#define _MLGSIM_H
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int CalcPtsTurn(void);
+void assign(void);
 
 #endif

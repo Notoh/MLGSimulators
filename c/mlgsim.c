@@ -1,4 +1,4 @@
-#include "main.h"
+#include "mlgsim.h"
 
 
 static struct Doritos {
@@ -16,7 +16,7 @@ static struct Dew {
 struct Doritos doritos;
 struct Dew dew;
 
-static void assign(void) {
+void assign(void) {
     doritos.cost = 30;
     doritos.PtsTurn = 10;
     dew.cost = 60;
@@ -26,17 +26,11 @@ static void assign(void) {
 int main(int argc, char *argv[]) {
     assign();
 
-
-    char *welcomemsg = NULL;
-
     int MLGPoints = 100; //default value
 
-    welcomemsg = (char *) malloc(sizeof(char)*35);
-    strcpy(welcomemsg,"\n\t------MLG Simulator by Alex Pawelko-----\t\n");
-    printf("%s",welcomemsg);
-    free(welcomemsg);
-    int i = NULL;
-    for(i = 1; i < 16; i++) {
+    printf("\n\t------MLG Simulator by Alex Pawelko-----\t\n");
+
+    for(int i = 1; i < 16; i++) {
         printf("\n\tYou are on turn %i.", i);
         printf("\n\tYou earned %d MLG Points this turn!",CalcPtsTurn());
         MLGPoints += CalcPtsTurn();
@@ -86,9 +80,6 @@ int main(int argc, char *argv[]) {
         }
         printf("\n\tTurn %i has ended.", i);
         printf("\n\t------------------------------------------------");
-    }
-    if(&i) {
-        free(&i);
     }
 
     printf("The game has ended with you scoring %i MLG Points, %d Doritos and %d litres of Mountain Dew!",MLGPoints,
